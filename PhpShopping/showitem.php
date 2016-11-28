@@ -21,7 +21,8 @@ and open the template in the editor.
     <body style="background:url('images/background3.jpg') no-repeat center center fixed;background-size: cover;font-size:20px;">
     <?php
         $item_id=$_GET['item_id'];
-        $conn=mysqli_connect("localhost","aman","myphp123","shopping");
+        include 'var.php';
+	$conn=mysqli_connect($host,$dbuser,$dbpassword,$database);
         if(mysqli_connect_error())
         {
             print_r("error");
