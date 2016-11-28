@@ -1,6 +1,7 @@
 <?php
 $itemtype=$_GET['itemtype'];
-$conn=mysqli_connect("localhost","aman","myphp123","shopping");
+include 'var.php';
+$conn=mysqli_connect($host,$dbuser,$dbpassword,$database);
 $query="Select * from shopping_list where item_type='$itemtype'";
 $result= mysqli_query($conn, $query);
 if (mysqli_num_rows($result))
