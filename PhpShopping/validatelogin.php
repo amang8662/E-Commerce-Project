@@ -1,7 +1,8 @@
 <?php
 $username=$_POST["username"];
 $password=$_POST["password"];
-$conn=mysqli_connect("localhost","aman","myphp123","shopping");
+include 'var.php';
+$conn=mysqli_connect($host,$dbuser,$dbpassword,$database);
 if(mysqli_connect_error())
 {
     print_r("error");
