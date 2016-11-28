@@ -1,7 +1,7 @@
 <?php
 $host="localhost";
-$dbuser="root";
-$dbpassword="";
+$dbuser="aman";
+$dbpassword="myphp123";
 $database="shopping";
 /* 
  * To change this license header, choose License Headers in Project Properties.
